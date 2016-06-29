@@ -42,7 +42,7 @@ export class AuthenticationService {
     if (localStorage.getItem('user') === null) {
         this._router.navigate(['/login']);
     }
-  }
+  } 
 
     getAuthenRestful() {
         return this._http.get(this._loginUrl).map(res => res.json());
